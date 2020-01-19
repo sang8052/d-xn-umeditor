@@ -1,0 +1,46 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <title>IW3C UMEDITOR DEMO</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" href="https://cdn.iw3c.top/font_icon/font_awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.iw3c.top/bootstrap/bootstrap-4.3.1/css/bootstrap.min.css">
+<link href="xn_umeditor/umeditor/themes/default/css/umeditor.css" type="text/css" rel="stylesheet" />
+<link href="xn_umeditor/umeditor/xn_umeditor.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src = "https://cdn.iw3c.top/jquery/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src = "https://cdn.iw3c.top/bootstrap/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+<script src="xn_umeditor/xn_bbs/xn_bbs_lib.js"></script>
+<script>
+	var debug = DEBUG = 0;
+	var url_rewrite_on = 0;
+	var umconfig = {
+		"upload_xnimg":        "upload.php?type=image",  // 复制粘贴图片时的上传地址
+		"upload_attachment":   "upload.php?type=file",   // 附件上传所调用的后端文件地址
+		"content_dom":         "message"                 // 富文本对应的textarea 的ID
+	}
+	// 存放上传的文件附件的数组
+	var file_attachment = [];
+	xn.options.water_image_url = 'xn_umeditor/xn_bbs/water-small.png';	
+</script>
+<script src="xn_umeditor/xn_bbs/xn_bbs.js"></script>
+
+
+   
+</head>
+<body>
+<h1>IW3C UMEDITOR DEMO</h1>
+<textarea class="form-control" id="message" style="height: 300px;"></textarea>
+
+<script type="text/javascript" src = "https://cdn.iw3c.top/layui/layer/v3.1.1/layer.js"></script>
+<script type="text/javascript" src="xn_umeditor/umeditor/umeditor.config.js"></script>
+<script type="text/javascript" src="xn_umeditor/umeditor/umeditor.js"></script>
+<script type="text/javascript" src="xn_umeditor/umeditor/plugin/umeditor-xnimg.js>"></script>
+<script type="text/javascript" src="xn_umeditor/umeditor/plugin/umeditor-insertcode.js"></script>
+<script type="text/javascript" src="xn_umeditor/umeditor/plugin/umeditor-attachment.js"></script>
+<script type="text/javascript" src="xn_umeditor/umeditor/xn_umeditor.js"></script>
+<script type="text/javascript" src="xn_umeditor/umeditor/lang/zh-cn/zh-cn.js"></script>
+</body>
+</html>
